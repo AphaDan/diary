@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <item name="image_orientation" type="id" />
+    <item name="state_origin" type="id" />
+    <item name="state_default" type="id" />
+    <item name="state_current" type="id" />
+    <item name="state_thumb" type="id" />
+    <item name="state_temp" type="id" />
+    <item name="state_exit" type="id" />
+    <item name="state_touch_drag" type="id" />
+    <item name="state_touch_scale" type="id" />
+    <item name="view_image_watcher" type="id" />
+    <item name="view_decoration" type="id"/>
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+</resources>

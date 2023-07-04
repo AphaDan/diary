@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myactivity">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".RegisterActivity"/>
+
+        <activity
+            android:name=".NewActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity android:name=".NoteActivity" />
+
+        <activity android:name=".view.matisse.ui.MatisseActivity" />
+
+        <activity android:name=".view.matisse.internal.ui.AlbumPreviewActivity" />
+
+        <activity android:name=".view.matisse.internal.ui.SelectedPreviewActivity" />
+《
+
+        <!--    知乎图片选择器，适配7.0系统  -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myactivity.view.matisse.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

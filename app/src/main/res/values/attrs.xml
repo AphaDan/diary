@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="toolbar" format="reference" />
+
+    <attr name="album.dropdown.title.color" format="reference|color" />
+
+    <attr name="album.dropdown.count.color" format="reference|color" />
+    <attr name="album.element.color" format="reference|color" />
+    <attr name="album.thumbnail.placeholder" format="reference|color" />
+    <attr name="album.emptyView" format="reference" />
+    <attr name="album.emptyView.textColor" format="reference|color" />
+    <attr name="listPopupWindowStyle" format="reference" />
+    <attr name="page.bg" format="reference|color" />
+    <attr name="bottomToolbar.bg" format="reference|color" />
+    <attr name="bottomToolbar.preview.textColor" format="reference|color" />
+    <attr name="bottomToolbar.apply.textColor" format="reference|color" />
+    <attr name="preview.bottomToolbar.back.textColor" format="reference|color" />
+    <attr name="preview.bottomToolbar.apply.textColor" format="reference|color" />
+    <attr name="item.placeholder" format="reference|color" />
+    <attr name="item.checkCircle.backgroundColor" format="reference|color" />
+    <attr name="item.checkCircle.borderColor" format="reference|color" />
+    <attr name="capture.textColor" format="reference|color" />
+    <declare-styleable name="RichTextEditor">
+        <attr name="rt_editor_image_height" format="integer" />
+        <attr name="rt_editor_image_bottom" format="integer" />
+        <attr name="rt_editor_text_init_hint" format="string" />
+        <attr name="rt_editor_text_size" format="dimension" />
+        <attr name="rt_editor_text_color" format="color" />
+        <attr name="rt_editor_text_line_space" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RichTextView">
+        <attr name="rt_view_image_height" format="integer" />
+        <attr name="rt_view_image_bottom" format="integer" />
+        <attr name="rt_view_text_init_hint" format="string" />
+        <attr name="rt_view_text_size" format="dimension" />
+        <attr name="rt_view_text_color" format="color" />
+        <attr name="rt_view_text_line_space" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="max" format="integer"></attr>
+        <attr name="progress" format="integer"></attr>
+        <attr name="startAngle" format="integer"></attr>
+        <attr name="ringColor" format="color" />
+        <attr name="ringProgressColor" format="color" />
+        <attr name="ringWidth" format="dimension"></attr>
+        <attr name="centreColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PenView">
+        <!-- 背景图dpi-->
+        <attr name="image_dpi" format="integer" />
+        <!--底图-->
+        <attr name="background_image" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DrawView">
+        <!-- 背景图dpi-->
+        <attr name="resources_dpi" format="integer" />
+        <!--底图-->
+        <attr name="background_resources" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectorView">
+        <attr name="selected_text" format="reference" />
+        <attr name="normal_src" format="reference" />
+        <attr name="normal_text_color" format="color" />
+        <attr name="selected__src" format="reference" />
+        <attr name="selected_text_color" format="color" />
+        <attr name="selected_view_checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectorImageView">
+        <attr name="selector_src" format="reference" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MyImageTextView">
+        <attr name="img_src" format="reference" />
+        <attr name="img_width" format="dimension" />
+        <attr name="img_height" format="dimension" />
+
+        <attr name="text" format="string" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="reference" />
+        <attr name="text_margin" format="dimension" />
+        <attr name="text_direction" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--更改网络安全配置 允许明文传输(最佳方案是使用https)-->
+<!--    <base-config cleartextTrafficPermitted="true"/>-->
+    <!--以下是蒲公英集成添加-->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">www.pgyer.com</domain>
+        <domain includeSubdomains="true">app-global.pgyer.com</domain>
+    </domain-config>
+</network-security-config>
